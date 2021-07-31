@@ -1,0 +1,150 @@
+:root {
+  --primary: rgba(20, 24, 33);
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--primary);
+  height: 100vh;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  margin: 2em 0;
+  padding: 1rem 6% 1rem 6%;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+header .logo {
+  flex: 2%;
+}
+
+header .navbar {
+  margin-left: -35px;
+  flex: 70%;
+}
+
+header .navbar a,
+h2,
+header .holiday-nav a,
+p {
+  font-size: 1.2rem;
+  margin-left: 3rem;
+  /* font-weight: bolder; */
+  color: white;
+}
+
+header .navbar h2 {
+  font-size: 2rem;
+  display: inline;
+  font-weight: lighter;
+}
+
+header .navbar a:hover {
+  color: gray;
+}
+
+header .holiday-nav a:hover {
+  color: gray;
+}
+
+header input {
+  display: none;
+}
+
+header label {
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+
+header .holiday-nav {
+  flex: 30%;
+  text-align: right;
+}
+header .holiday-nav p {
+  display: inline-block;
+  margin: 0.3em 0 0 0;
+  font-weight: medium;
+}
+
+header .holiday-nav a {
+  font-size: 1.1rem;
+  border: 1px solid white;
+  padding: 0.3em 2.5em;
+  margin: 0 0 0 10px;
+}
+
+/* media queries  */
+@media (max-width: 1200px) {
+  header .holiday-nav p {
+    display: none;
+  }
+  header .navbar h2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  header label {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 30px;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+  }
+
+  header .navbar a {
+    display: block;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+  }
+
+  header .navbar h2,
+  header .holiday-nav {
+    display: none;
+  }
+
+  header input:checked ~ .navbar {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
