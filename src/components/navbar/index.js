@@ -1,13 +1,28 @@
 import React from "react";
-import "../../styles/navbar.css";
+import "./navbar.css";
 import { AiOutlineMenu } from "react-icons/ai";
-import logo from "../../assets/logo.PNG";
+import logo from "../../assets/logo.webp";
 
 export default function NavBar() {
+  const [scrolled, setScrolled] = React.useState(false);
+
+  //sticky header on scroll
+  React.useEffect(() => {
+    const changeHeaderPosition = () => {
+      window.scrollY >= 40 ? setScrolled(true) : setScrolled(false);
+    };
+    window.addEventListener("scroll", changeHeaderPosition);
+
+    //cleaning up event listner ron unmounting
+    return (_) => {
+      window.removeEventListener("scroll", changeHeaderPosition);
+    };
+  }, [scrolled]);
+
   return (
-    <header>
+    <header className={scrolled ? "sticky-header" : "normal-header"}>
       <a href="#home" className="logo">
-        <img src={logo} alt="bandago" />
+        <img src={logo} alt="logo" height="40" />
       </a>
 
       <input type="checkbox" id="menu-bar"></input>

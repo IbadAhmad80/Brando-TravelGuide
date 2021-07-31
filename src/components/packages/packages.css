@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300&display=swap");
+:root {
+  --primary: rgba(20, 24, 33);
+}
+
+.packages-container {
+  display: block;
+  margin: 8em auto;
+}
+
+.packages-container .main-heading {
+  font-size: 35px;
+  line-height: 36px;
+  text-align: center;
+  color: #d66e4a;
+}
+
+.packages-container .sub-heading {
+  line-height: 22px;
+  font-size: 15px;
+  text-align: center;
+  margin: 1em 0;
+  color: white;
+}

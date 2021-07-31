@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 :root {
-  --primary: rgba(20, 24, 33);
+  --primary: rgb(20, 24, 33);
 }
 
 * {
@@ -10,7 +11,7 @@
   text-decoration: none;
   outline: none;
   border: none;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 html {
@@ -23,12 +24,23 @@ body {
   height: 100vh;
 }
 
-header {
-  position: fixed;
+.normal-header {
+  position: sticky;
   width: 100%;
   background: transparent;
+  margin: 0 0 3em 0;
+  padding: 3rem 6% 1rem 6%;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.sticky-header {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  background: var(--primary);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  margin: 2em 0;
   padding: 1rem 6% 1rem 6%;
   display: flex;
   align-items: center;
@@ -115,7 +127,7 @@ header .holiday-nav a {
 
   header .navbar {
     position: absolute;
-    top: 100%;
+    top: 99%;
     left: 30px;
     width: 100%;
     padding: 1rem 2rem;
@@ -124,6 +136,7 @@ header .holiday-nav a {
     transform-origin: top;
     transform: scaleY(0);
     opacity: 0;
+    background: rgba(20, 24, 33, 0.95);
   }
 
   header .navbar a {
