@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 :root {
-  --primary: rgb(20, 24, 33);
+  --primary: rgb(30, 33, 38);
 }
 
 * {
@@ -24,7 +24,7 @@ body {
   height: 100vh;
 }
 
-.normal-header {
+.normal_header {
   position: sticky;
   width: 100%;
   background: transparent;
@@ -35,7 +35,7 @@ body {
   z-index: 1000;
 }
 
-.sticky-header {
+.sticky_header {
   width: 100%;
   top: 0;
   position: fixed;
@@ -58,7 +58,7 @@ header .navbar {
 
 header .navbar a,
 h2,
-header .holiday-nav a,
+header .holiday_nav a,
 p {
   font-size: 1.2rem;
   margin-left: 3rem;
@@ -76,7 +76,7 @@ header .navbar a:hover {
   color: gray;
 }
 
-header .holiday-nav a:hover {
+header .holiday_nav a:hover {
   color: gray;
 }
 
@@ -92,17 +92,17 @@ header label {
   opacity: 0;
 }
 
-header .holiday-nav {
+header .holiday_nav {
   flex: 30%;
   text-align: right;
 }
-header .holiday-nav p {
+header .holiday_nav p {
   display: inline-block;
   margin: 0.3em 0 0 0;
   font-weight: medium;
 }
 
-header .holiday-nav a {
+header .holiday_nav a {
   font-size: 1.1rem;
   border: 1px solid white;
   padding: 0.3em 2.5em;
@@ -111,7 +111,7 @@ header .holiday-nav a {
 
 /* media queries  */
 @media (max-width: 1200px) {
-  header .holiday-nav p {
+  header .holiday_nav p {
     display: none;
   }
   header .navbar h2 {
@@ -146,7 +146,7 @@ header .holiday-nav a {
   }
 
   header .navbar h2,
-  header .holiday-nav {
+  header .holiday_nav {
     display: none;
   }
 

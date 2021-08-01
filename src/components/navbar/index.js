@@ -1,5 +1,5 @@
 import React from "react";
-import "./navbar.css";
+import styles from "./navbar.module.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import logo from "../../assets/logo.webp";
 
@@ -20,9 +20,9 @@ export default function NavBar() {
   }, [scrolled]);
 
   return (
-    <header className={scrolled ? "sticky-header" : "normal-header"}>
-      <a href="#home" className="logo">
-        <img src={logo} alt="logo" height="40" />
+    <header className={scrolled ? styles.sticky_header : styles.normal_header}>
+      <a href="#home" className={styles.logo}>
+        <img src={logo} alt="logo" height="30" />
       </a>
 
       <input type="checkbox" id="menu-bar"></input>
@@ -30,7 +30,7 @@ export default function NavBar() {
         <AiOutlineMenu />
       </label>
 
-      <nav className="navbar">
+      <nav className={styles.navbar}>
         <h2> | </h2>
         <a href="#home">ABOUT</a>
         <a href="#features">PACKAGES</a>
@@ -39,7 +39,7 @@ export default function NavBar() {
         <a href="#pricing">BLOG</a>
         <a href="#contact">CONTACT</a>
       </nav>
-      <span className="holiday-nav">
+      <span className={styles.holiday_nav}>
         <p>ENJOY HOLIDAYS ?</p>
         <a href="#contact">Book Now!</a>
       </span>

@@ -1,36 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300&display=swap");
-:root {
-  --primary: rgba(20, 24, 33);
-}
 
-.carousel-items {
+.carousel_items {
   display: flex;
   color: white;
   height: 65em;
 }
 
-.carousel-items[id="1"] {
+.carousel_items[id="1"] {
   background: url("../../assets/carousel-4.jpg") no-repeat;
   object-fit: cover;
 }
 
-.carousel-items[id="2"] {
+.carousel_items[id="2"] {
   background: url("../../assets/carousel-5.jpg") no-repeat;
   object-fit: cover;
 }
 
-.carousel-items[id="3"] {
+.carousel_items[id="3"] {
   background: url("../../assets/carousel-6.jpg") no-repeat;
   object-fit: cover;
 }
 
-.carousel-items img {
+.carousel_items img {
   flex: 50%;
   max-width: 50%;
   background-size: 100% 200%;
 }
 
-.carousel-items .carousel-description-container {
+.carousel_items .carousel_description_container {
   flex: 50%;
   padding: 6em 0 3em 0;
   align-self: center;
@@ -38,7 +35,7 @@
     move;
 }
 
-.carousel-items .carousel-description-container .title {
+.carousel_items .carousel_description_container .title {
   font-size: 35px;
   width: 70%;
   margin: 0 auto;
@@ -47,7 +44,7 @@
   letter-spacing: 0.02cm;
 }
 
-.carousel-items .carousel-description-container .separation-bar {
+.carousel_items .carousel_description_container .separation_bar {
   background: var(--primary);
   height: 7px;
   width: 12em;
@@ -55,7 +52,7 @@
   font-weight: lighter;
 }
 
-.carousel-items .carousel-description-container .description {
+.carousel_items .carousel_description_container .description {
   font-size: 14px;
   color: white;
   text-transform: capitalize;
@@ -66,7 +63,7 @@
   text-transform: uppercase;
 }
 
-.carousel-items .carousel-description-container .explore-now-btn {
+.carousel_items .carousel_description_container .explore_now_btn {
   margin: 4em 0;
   background: rgba(255, 255, 255, 0.1);
   font-size: 12px;
@@ -79,18 +76,18 @@
 }
 
 @media (max-width: 950px) {
-  .carousel-items {
+  .carousel_items {
     flex-direction: column;
     height: auto;
   }
 
-  .carousel-items img {
+  .carousel_items img {
     min-height: 400px;
     max-width: 100%;
   }
 
-  .carousel-items .carousel-description-container .title {
-    width: 100%;
+  .carousel_items .carousel_description_container .title {
+    width: 80%;
     font-size: 28px;
   }
 }
