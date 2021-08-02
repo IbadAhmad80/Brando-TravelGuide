@@ -1,0 +1,41 @@
+:root {
+  --primary: rgb(30, 33, 38);
+}
+
+.stats_container {
+  display: grid;
+  width: 85%;
+  grid-template-columns: repeat(4, 25%);
+  margin: 8em auto;
+  row-gap: 4em;
+}
+
+.stats_container div {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  line-height: 35px;
+}
+
+.stats_container div .stat_title {
+  color: #ababab;
+  font-size: 10px;
+}
+
+.stats_container div .stat {
+  color: #ababab;
+  font-size: 40px;
+}
+
+.bottom_devider {
+  margin: 8em 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 1px;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 950px) {
+  .stats_container {
+    grid-template-columns: repeat(2, 50%);
+  }
+}

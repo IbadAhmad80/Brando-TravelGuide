@@ -5,7 +5,7 @@ import { data } from "./packages-data";
 export default function Packages() {
   return (
     <div className={styles.packages_container}>
-      <h2 className={styles.main_heading}>Taylor Made Packages</h2>
+      <h2 className={styles.main_heading}>Tailor Made Packages</h2>
       <h4 className={styles.sub_heading}>WHAT ARE YOU IN THE MOOD FOR?</h4>
       <div className={styles.package_grid}>
         {data.map(({ id, title, description, destinations }) => {

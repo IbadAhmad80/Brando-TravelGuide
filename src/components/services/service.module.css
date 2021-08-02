@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+.services_container {
+  margin: 14em auto;
+  text-align: center;
+}
+
+.services_container .main_heading {
+  font-size: 35px;
+  line-height: 36px;
+  color: #d66e4a;
+  text-transform: uppercase;
+}
+
+.services_container .sub_heading {
+  line-height: 22px;
+  font-size: 15px;
+  margin: 1em 0;
+  color: white;
+}
+
+.services_container .service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 8em auto;
+  width: 85%;
+}
+
+.services_container .service > div {
+  flex: 0 1 270px;
+  margin: 0px 8px 15px 8px;
+  padding: 2em;
+}
+
+.services_container .service > div:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  border: 0.2em dashed rgb(75, 71, 81);
+  transform: scale(1.1);
+}
+
+.services_container .service .logo {
+  color: #929292;
+  font-size: 50px !important;
+  display: block;
+}
+
+.services_container .service .title {
+  line-height: 24px;
+  margin: 12px 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.services_container .service .description {
+  line-height: 24px;
+  font-size: 12px;
+  color: #ababab;
+  font-weight: lighter;
+}
+
+@media (max-width: 1000px) {
+  .services_container .service {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .main_heading {
+    font-size: 30px !important;
+  }
+  .sub_heading {
+    font-size: 13px !important;
+  }
+}

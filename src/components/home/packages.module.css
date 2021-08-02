@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300&display=swap");
-
 .packages_container {
-  margin: 8em auto;
+  margin: 14em auto;
   text-align: center;
 }
 
@@ -54,14 +52,24 @@
   transition: 0.4s;
 }
 
-.packages_container .package_grid .package_image_overlay > div {
-  display: grid;
-  place-items: center;
-  height: 100%;
+.package_grid div:nth-last-child(-n + 2) .package_image_overlay {
+  float: left;
 }
 
 .package_grid div:hover .package_image_overlay {
   transform: translate(-101%);
+}
+
+.package_grid
+  div:nth-last-child(-n + 2):hover
+  .package_image_overlay:nth-last-child(-n + 2) {
+  transform: translate(101%);
+}
+
+.packages_container .package_grid .package_image_overlay > div {
+  display: grid;
+  place-items: center;
+  height: 100%;
 }
 
 .packages_container .package_grid .package_image_overlay .title {
@@ -111,23 +119,21 @@
   }
 
   .package_grid div:nth-child(odd) .package_image_overlay {
-    float: right;
+    float: left;
   }
 
   .package_grid div:nth-child(even) .package_image_overlay {
-    float: left;
+    float: right;
   }
 
   .package_grid
     div:nth-child(even):hover
     .package_image_overlay:nth-child(odd) {
-    transform: translate(101%);
-    /* display: none; */
-  }
-
-  /* .package_grid div:nth-child(odd):hover .package_image_overlay:nth-child(odd) {
     transform: translate(-101%);
-  } */
+  }
+  .package_grid div:nth-child(1):hover .package_image_overlay:nth-child(1) {
+    transform: translate(101%);
+  }
 }
 
 @media (max-width: 700px) {
@@ -149,5 +155,14 @@
   .destination,
   .separation_bar {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .main_heading {
+    font-size: 30px !important;
+  }
+  .sub_heading {
+    font-size: 13px !important;
   }
 }
