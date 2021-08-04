@@ -32,11 +32,11 @@ export default function NavBar() {
 
       <nav className={styles.navbar}>
         <h2> | </h2>
-        <a href="#home">ABOUT</a>
-        <a href="#features">PACKAGES</a>
-        <a href="#about">SERVICES</a>
-        <a href="#review">OFFER</a>
-        <a href="#pricing">BLOG</a>
+        <a href="#about">ABOUT</a>
+        <a href="#packages">PACKAGES</a>
+        <a href="#services">SERVICES</a>
+        <a href="#offers">OFFER</a>
+        <a href="#blogs">BLOG</a>
         <a href="#contact">CONTACT</a>
       </nav>
       <span className={styles.holiday_nav}>

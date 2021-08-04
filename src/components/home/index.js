@@ -1,7 +1,7 @@
 import React from "react";
 import HomeCarousel from "./Carousel";
 import styles from "./home.module.css";
-import Packages from "./taylor-packages";
+import Packages from "./tailor-packages";
 export default function HomeSection() {
   return (
     <div className={styles.home_container}>

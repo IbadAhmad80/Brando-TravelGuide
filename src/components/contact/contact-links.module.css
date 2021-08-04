@@ -1,0 +1,44 @@
+:root {
+  --primary: rgb(30, 33, 38);
+}
+
+.links_container {
+  display: grid;
+  width: 85%;
+  grid-template-columns: repeat(3, 33%);
+  margin: 8em auto;
+  row-gap: 4em;
+  text-align: center;
+}
+
+.links_container .link_logo {
+  color: #ababab;
+  font-size: 45px;
+}
+
+.links_container .link_title {
+  color: #ababab;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.links_container .link_info {
+  color: #ababab;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.03cm;
+}
+
+.bottom_devider {
+  margin: 8em auto;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 1px;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 730px) {
+  .links_container {
+    grid-template-columns: repeat(1, 100%);
+  }
+}

@@ -1,0 +1,52 @@
+.carousel_container {
+  width: 99%;
+  margin: 7em auto 0 auto;
+}
+.carousel_container .blog {
+  cursor: url(https://brandowp.b-cdn.net/wp-content/themes/brando/assets/images/icon-move-light.png),
+    move;
+  margin: 0 0.5em;
+}
+
+.carousel_container .blog img {
+  width: 100% !important;
+}
+
+.carousel_container .blog .published_date {
+  line-height: 20px;
+  font-size: 11px;
+  background: #1e2126;
+  color: white;
+  display: none;
+}
+
+.carousel_container .blog .id {
+  display: inline-block;
+  font-size: 35px;
+  color: #d66e4a;
+}
+
+.carousel_container .blog .title {
+  display: inline-block;
+  padding: 0.3em 2em 0 0.5em;
+  width: 85%;
+  color: #ababab;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.carousel_container .blog .title:hover {
+  transition: 0.3s all;
+  cursor: pointer !important;
+  opacity: 0.8;
+}
+
+.carousel_container .blog .author {
+  color: #ababab;
+  font-size: 12px;
+  padding: 0.5em 0 0 4em;
+  text-transform: uppercase;
+  font-weight: 300;
+}

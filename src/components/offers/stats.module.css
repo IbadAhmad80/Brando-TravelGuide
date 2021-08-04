@@ -19,6 +19,8 @@
 .stats_container div .stat_title {
   color: #ababab;
   font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0.05cm;
 }
 
 .stats_container div .stat {
@@ -27,7 +29,7 @@
 }
 
 .bottom_devider {
-  margin: 8em 0;
+  margin: 8em 0 7em 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   height: 1px;

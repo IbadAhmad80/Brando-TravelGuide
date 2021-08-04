@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./packages.module.css";
+import styles from "./tailor-packages.module.css";
 import { data } from "./packages-data";
 
 export default function Packages() {

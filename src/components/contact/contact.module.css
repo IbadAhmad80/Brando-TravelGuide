@@ -1,0 +1,30 @@
+.contact_container {
+  margin: 0em auto;
+}
+
+.contact_container .main_heading {
+  padding-top: 2em;
+  margin: 0 auto;
+  font-size: 35px;
+  line-height: 36px;
+  text-align: center;
+  color: #d66e4a;
+}
+
+.contact_container .sub_heading {
+  line-height: 22px;
+  font-size: 15px;
+  margin: 1em 0;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .main_heading {
+    font-size: 30px !important;
+    width: 90% !important;
+  }
+  .sub_heading {
+    font-size: 13px !important;
+  }
+}

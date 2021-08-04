@@ -60,7 +60,9 @@ function CarouselItemDescription({ title, description }) {
       <h5 className={styles.title}>{title}</h5>
       <h2 className={styles.separation_bar}>{}</h2>
       <h3 className={styles.description}>{description}</h3>
-      <button className={styles.explore_now_btn}>Explore Now</button>
+      <a href="#contact">
+        <button className={styles.explore_now_btn}>Explore Now</button>
+      </a>
     </div>
   );
 }

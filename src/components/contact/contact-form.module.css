@@ -1,0 +1,90 @@
+.form_container {
+  display: flex;
+  width: 80%;
+  margin: 4em auto;
+  text-align: center;
+}
+
+.form_container .text_fields {
+  flex: 50%;
+}
+
+.form_container .text_fields .input_field {
+  caret-color: white;
+  outline: none;
+  display: block;
+  padding: 12px 25px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  font-size: 12px !important;
+  background: rgba(255, 255, 255, 0.1);
+  width: 80%;
+  margin: 15px auto;
+}
+
+.form_container .text_fields .input_field:nth-of-type(1) {
+  margin-top: 10px;
+}
+
+.form_container .text_area {
+  flex: 50%;
+}
+
+.form_container .text_area .message {
+  caret-color: white;
+  height: 85%;
+  padding: 12px 25px;
+  border: 2px solid rgba(255, 255, 255, 0.1) !important;
+  font-size: 12px !important;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 8px auto;
+  width: 80% !important;
+}
+
+.button_container {
+  width: 86%;
+  margin-top: -20px;
+}
+
+.button_container .message_btn {
+  border: 4px solid rgba(255, 255, 255, 0.4);
+  background-color: transparent;
+  font-size: 14px;
+  padding: 15px;
+  color: #ababab;
+  float: right;
+}
+
+.button_container .message_btn:hover {
+  transition: 0.3s;
+  background-color: rgb(75, 73, 81);
+  color: white;
+  cursor: pointer;
+}
+
+.bottom_devider {
+  margin: 24em 0 0 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 1px;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 1050px) {
+  .form_container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form_container .input_field {
+    flex: 100%;
+    margin: 20px auto !important;
+  }
+  .form_container .text_area {
+    flex: 100%;
+  }
+
+  .form_container .message {
+    margin: 2px auto !important;
+    height: 122px !important;
+  }
+}
