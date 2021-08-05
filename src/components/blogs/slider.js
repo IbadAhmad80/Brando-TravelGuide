@@ -6,13 +6,13 @@ import Carousel, {
 } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 
-import image from "../../assets/pkg-8.jpg";
+import image from "../../assets/pkg-2.jpg";
 import image1 from "../../assets/blog-1.jpg";
 import image2 from "../../assets/blog-2.jpg";
 import image3 from "../../assets/blog-3.jpg";
 import image4 from "../../assets/blog-4.jpg";
 import image5 from "../../assets/blog-5.jpg";
-import image6 from "../../assets/pkg-0.jpg";
+import image6 from "../../assets/blog-6.jpg";
 
 export default function BlogSlider() {
   return (
@@ -133,7 +133,7 @@ export default function BlogSlider() {
 function SingleBlog({ title, id, img }) {
   return (
     <div className={styles.blog}>
-      <img src={img} alt="blog pic" width={320} height={210} />
+      <img src={img} alt="blog pic" />
       <h5 className={styles.published_date}>26 JUNE , 2016</h5>
       <h5 className={styles.id}>0{id}</h5>
       <h3 className={styles.title}>{title}</h3>

@@ -10,6 +10,7 @@
 
 .carousel_container .blog img {
   width: 100% !important;
+  height: 230px;
 }
 
 .carousel_container .blog .published_date {
@@ -49,4 +50,10 @@
   padding: 0.5em 0 0 4em;
   text-transform: uppercase;
   font-weight: 300;
+}
+
+@media (max-width: 685px) and (min-width: 460px) {
+  .carousel_container .blog img {
+    height: 330px !important;
+  }
 }

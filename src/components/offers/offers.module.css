@@ -33,10 +33,10 @@
 
 .offers_container .offers {
   display: grid;
-  width: 85%;
+  width: 100%;
   margin: 8em auto !important;
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 550px));
   justify-content: center !important;
 }
 
@@ -100,6 +100,12 @@
   margin: 45px auto 8px auto;
   height: 5px;
   background-color: var(--primary) !important;
+}
+
+@media (max-width: 1150px) {
+  .offers_container .offers {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 490px));
+  }
 }
 
 @media (max-width: 770px) {
