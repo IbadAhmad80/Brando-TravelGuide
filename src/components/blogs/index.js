@@ -1,6 +1,7 @@
 import React from "react";
 import BlogSlider from "./slider";
 import styles from "./blogs.module.css";
+import Testnomials from "./testnomials";
 
 export default function Blogs() {
   return (
@@ -13,6 +14,7 @@ export default function Blogs() {
       </div>
       <BlogSlider />
       <div className={styles.bottom_devider}>{}</div>
+      <Testnomials />
     </div>
   );
 }

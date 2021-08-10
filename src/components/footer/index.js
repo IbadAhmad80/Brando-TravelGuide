@@ -58,7 +58,7 @@ export default function Footer() {
           <img src={logo} alt="footer logo" width={200} height={42} />
         </div>
         <div className={styles.copywright_text}>
-          © 2021 BRANDO IS PROUDLY POWERED BY IBAD.
+          © 2021 BRANDO - TRAVEL GUIDE IS CREATED BY IBAD.
         </div>
         <div className={styles.bottom_devider}></div>
       </div>
