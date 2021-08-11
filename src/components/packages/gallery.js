@@ -14,7 +14,7 @@ import image10 from "../../assets/pkg-10.jpg";
 import image11 from "../../assets/pkg-11.jpg";
 
 export default function Gallery() {
-  const [selectedCategory, setSelectedCatgeory] = React.useState("all");
+  const [selectedCategory, setSelectedCatgeory] = React.useState("honeymoon");
   const [activePackages, setActivePackages] = React.useState(packages);
 
   React.useEffect(() => {
@@ -37,7 +37,7 @@ export default function Gallery() {
         <nav>
           <div className="items">
             <span
-              className="item active all"
+              className="item all"
               onClick={() => setSelectedCatgeory("all")}
             >
               All
@@ -62,7 +62,7 @@ export default function Gallery() {
               safari
             </span>
             <span
-              className="item honeymoon"
+              className="item active honeymoon"
               onClick={() => setSelectedCatgeory("honeymoon")}
             >
               honeymoon

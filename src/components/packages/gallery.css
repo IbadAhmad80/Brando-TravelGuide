@@ -15,8 +15,7 @@
 
 .wrapper .items {
   display: flex;
-  max-width: 720px;
-  width: 100%;
+  width: 80%;
   justify-content: center;
 }
 
@@ -142,9 +141,6 @@
 }
 
 @media (max-width: 700px) {
-  .wrapper nav .items {
-    max-width: 600px;
-  }
   nav .items span {
     padding: 7px 15px;
   }
@@ -161,7 +157,4 @@
   nav .items span {
     margin: 5px;
   }
-  /* .gallery .image img {
-    width: 200%;
-  } */
 }

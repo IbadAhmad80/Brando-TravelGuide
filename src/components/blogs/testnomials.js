@@ -39,7 +39,7 @@ function SwiperSlideShow() {
         slidesPerView={"auto"}
         coverflowEffect={{
           rotate: 0,
-          stretch: 50,
+          stretch: 0,
           depth: 100,
           modifier: 2,
           slideShadows: true,

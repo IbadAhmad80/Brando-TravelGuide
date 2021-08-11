@@ -6,16 +6,19 @@
 
 .carousel_items[id="1"] {
   background: url("../../assets/carousel-4.jpg") no-repeat;
+
   object-fit: cover;
 }
 
 .carousel_items[id="2"] {
   background: url("../../assets/carousel-5.jpg") no-repeat;
+
   object-fit: cover;
 }
 
 .carousel_items[id="3"] {
   background: url("../../assets/carousel-6.jpg") no-repeat;
+
   object-fit: cover;
 }
 
