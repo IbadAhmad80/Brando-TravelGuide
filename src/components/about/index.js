@@ -4,7 +4,7 @@ import { BsBookmarkCheck, BsHeart } from "react-icons/bs";
 import { ImCompass2 } from "react-icons/im";
 import { GiParachute } from "react-icons/gi";
 import LowerSection from "./lower-section";
-
+import ExploreTours from "./explore-section";
 export default function About() {
   const [services] = React.useState([
     {
@@ -38,6 +38,7 @@ export default function About() {
           })}
         </div>
       </div>
+      <ExploreTours />
       <LowerSection />
     </div>
   );
