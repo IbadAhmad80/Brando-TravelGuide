@@ -17,7 +17,7 @@ export default function Offers() {
     <div>
       <div className={styles.main_container}>
         <div className={styles.offers_container}>
-          <h2 className={styles.main_heading}>SPECIAL OFFERS NOW</h2>
+          <h2 className={styles.main_heading}>SPECIAL OFFERS</h2>
           <h4 className={styles.sub_heading}>
             CHECK OUT OUR BEST PROMOTION TOURS
           </h4>

@@ -3,8 +3,8 @@
 }
 
 .main_container {
-  background: url("../../assets/service-bg.jpg") no-repeat;
-  background-size: 100% 120%;
+  background: url("../../assets/mountain.jpg") no-repeat;
+  background-size: 100% 80%;
   background-attachment: fixed;
 }
 
