@@ -4,7 +4,7 @@
   justify-content: start;
   flex-wrap: wrap;
   width: 100%;
-  margin: 2%;
+  margin: 2% 10%;
   color: #a0abab;
 }
 
@@ -13,6 +13,11 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  font-size: 14px;
+  align-self: center;
+  position: relative;
+  left: 20px;
+  font-weight: 500;
 }
 .columnImg {
   display: flex;
@@ -26,6 +31,12 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 3;
+}
+
+.columnText p {
+  font-weight: 300 !important;
+  letter-spacing: 0.01cm;
+  font-size: 14px;
 }
 .columnButton {
   display: flex;
@@ -42,6 +53,7 @@
   flex-basis: 50%;
   flex: 0.1;
   width: 100%;
+  font-size: 34px;
 }
 .detailsList {
   list-style: none;
@@ -53,7 +65,7 @@
   left: 7%;
   margin-bottom: 2%;
 }
-img {
+.columnImg img {
   border-radius: 50%;
   display: inline;
 }

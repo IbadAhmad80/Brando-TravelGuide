@@ -11,28 +11,28 @@ const details = [
     title: "Honeymoon",
     logo: <AiOutlineHeart />,
     image: "pkg-11",
-    text: "loreipsum hddfnasbliguadfab shuduirbws sdsfe gitbwe wedhrjfjr dhevfueuf b fryfhe r dhdeyufjr saw4  e4t54tw4t sdsfnk  fgdjdjdjdj vk irioewmmckshtyusoe ",
+    text: "Lorem Ipsum is simply dummy text of the printing & typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s. ",
   },
   {
     id: 2,
     title: "Explore Nature",
     logo: <GiAirBalloon />,
     image: "pkg-10",
-    text: "loreipsum hddfnasbliguadfab shuduirbws sdsfe gitbwe wedhrjfjr dhevfueuf b fryfhe r dhdeyufjr saw4  e4t54tw4t sdsfnk  fgdjdjdjdj vk irioewmmckshtyusoe ",
+    text: "Lorem Ipsum is simply dummy text of the printing & typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s. ",
   },
   {
     id: 3,
     title: "Best Destinations",
     logo: <GoLocation />,
     image: "pkg-0",
-    text: "loreipsum hddfnasbliguadfab shuduirbws sdsfe gitbwe wedhrjfjr dhevfueuf b fryfhe r dhdeyufjr saw4  e4t54tw4t sdsfnk  fgdjdjdjdj vk irioewmmckshtyusoe ",
+    text: "Lorem Ipsum is simply dummy text of the printing & typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s. ",
   },
   {
     id: 4,
     title: "Amazing Travel",
     logo: <MdCardTravel />,
     image: "pkg-9",
-    text: "loreipsum hddfnasbliguadfab shuduirbws sdsfe gitbwe wedhrjfjr dhevfueuf b fryfhe r dhdeyufjr saw4  e4t54tw4t sdsfnk  fgdjdjdjdj vk irioewmmckshtyusoe ",
+    text: "Lorem Ipsum is simply dummy text of the printing & typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s. ",
   },
 ];
 

@@ -20,9 +20,16 @@
   flex: 2;
 }
 .bgimage {
-  padding: 0.5%;
-  height: 700px;
+  height: auto;
   background-image: url(/src/assets/service-bg.jpg);
-  opacity: 50%;
+  opacity: 100%;
   z-index: -1;
+}
+
+.bgimage > div {
+  width: 100%;
+  opacity: 0.8;
+  background-color: #1e2126;
+  height: 100%;
+  padding: 0.5%;
 }
