@@ -1,0 +1,49 @@
+.row {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 10% auto;
+  row-gap: 5rem;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.doubleColumn {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  flex: 1;
+}
+.bgimage {
+  height: auto;
+  background-image: url(/src/assets/service-bg.jpg);
+  /* background-repeat: no-repeat; */
+
+  opacity: 100%;
+  z-index: -1;
+}
+
+.bgimage > div {
+  width: 100%;
+  opacity: 0.8;
+  background-color: #1e2126;
+  height: 100%;
+  padding: 0.5%;
+}
+
+@media (max-width: 1100px) {
+  .row {
+    flex-direction: column !important;
+  }
+  .column {
+    flex: 100%;
+  }
+
+  .doubleColumn {
+    flex: 100%;
+  }
+}

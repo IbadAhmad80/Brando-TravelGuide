@@ -1,0 +1,100 @@
+.carousel_items {
+  display: flex;
+  color: white;
+  height: 70em;
+}
+
+.carousel_items[id="1"] {
+  background: url("../../assets/carousel-4.jpg") no-repeat;
+  object-fit: cover;
+}
+
+.carousel_items[id="2"] {
+  background: url("../../assets/carousel-5.jpg") no-repeat;
+
+  object-fit: cover;
+}
+
+.carousel_items[id="3"] {
+  background: url("../../assets/carousel-6.jpg") no-repeat;
+
+  object-fit: cover;
+}
+
+.carousel_items img {
+  flex: 50%;
+  max-width: 50%;
+  background-size: 100% 200%;
+}
+
+.carousel_items .carousel_description_container {
+  flex: 50%;
+  padding: 6em 0 3em 0;
+  align-self: center;
+  cursor: url(https://brandowp.b-cdn.net/wp-content/themes/brando/assets/images/icon-move-light.png),
+    move;
+}
+
+.carousel_items .carousel_description_container .title {
+  font-size: 35px;
+  width: 70%;
+  margin: 0 auto;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.02cm;
+}
+
+.carousel_items .carousel_description_container .separation_bar {
+  background: var(--primary);
+  height: 7px;
+  width: 12em;
+  margin: 50px auto;
+  font-weight: lighter;
+}
+
+.carousel_items .carousel_description_container .description {
+  font-size: 14px;
+  color: white;
+  text-transform: capitalize;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 1.4em;
+  letter-spacing: 0.03cm;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.carousel_items .carousel_description_container .explore_now_btn {
+  margin: 4em 0;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.02cm;
+  color: white;
+  border: 4px solid rgba(255, 255, 255, 0.4);
+  font-weight: lighter;
+}
+
+.carousel_items .carousel_description_container .explore_now_btn:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media (max-width: 950px) {
+  .carousel_items {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .carousel_items img {
+    min-height: 400px;
+    max-width: 100%;
+  }
+
+  .carousel_items .carousel_description_container .title {
+    width: 80%;
+    font-size: 28px;
+  }
+}

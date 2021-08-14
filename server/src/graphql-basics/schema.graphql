@@ -1,0 +1,12 @@
+type Query {
+  packages: [Packages!]!
+}
+
+type Packages {
+  id: ID!
+  title: String!
+  description: String!
+  detail: String!
+  category: [String!]!
+  image: String!
+}

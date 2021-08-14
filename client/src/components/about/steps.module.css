@@ -1,0 +1,53 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 7% auto;
+  margin-left: -5%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.doubleColumn {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+  margin-left: 10%;
+}
+
+.hr {
+  border-bottom: 1px solid #929292;
+  width: 50%;
+  position: relative;
+  left: 25%;
+}
+.numberColor {
+  color: #d66e4a;
+}
+.textColor {
+  color: #ffffff;
+  width: 35%;
+  font-weight: 300;
+  position: relative;
+  left: 5%;
+}
+.detailHeading {
+  color: #cccccc;
+}
+
+.stepsList {
+  list-style: none;
+  background-color: rgba(68, 71, 73, 0.8);
+  font-size: 15px;
+}
+
+.stepsList p {
+  width: 50%;
+}

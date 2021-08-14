@@ -1,0 +1,102 @@
+.detail_container {
+  color: white;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.detail_container .carousel {
+  flex: 50%;
+  height: 100%;
+}
+
+.detail_container .carousel .close_icon {
+  font-size: 35px;
+  position: absolute;
+  float: right;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.detail_container .detail_wrapper {
+  flex: 50%;
+  background-color: white;
+}
+
+.detail_container .detail_wrapper .close_icon {
+  font-size: 35px;
+  position: relative;
+  float: right;
+  color: black;
+  cursor: pointer;
+}
+
+.information_container {
+  margin: 3rem auto 0 auto;
+  padding: 0 10em;
+}
+
+.information_container h5 {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  margin: 40px auto;
+  font-size: 20px;
+}
+
+.information_container h6 {
+  color: rgb(116, 116, 116);
+  font-weight: 500;
+  margin: 40px auto;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.separator {
+  width: 80%;
+  height: 1px;
+  margin: 45px auto;
+  background-color: rgb(194, 187, 187);
+}
+
+.information_container li {
+  margin: 20px 0 20px 0;
+  list-style: none;
+}
+
+.information_container li ol {
+  margin: 15px 0;
+  display: flex;
+}
+
+.information_container li ol h4 {
+  display: block;
+  color: white;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  background-color: black;
+  font-size: 12px;
+  align-self: flex-start;
+  margin: 0;
+}
+
+.information_container li ol h6 {
+  color: rgb(116, 116, 116);
+  font-size: 13px;
+  padding: 0 1em;
+  margin: 0;
+  align-self: center;
+}
+
+.information_container li ol:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1320px) {
+  .detail_container {
+    flex-direction: column;
+  }
+
+  .close_icon {
+    display: none;
+  }
+}
