@@ -1,7 +1,7 @@
 .carousel_items {
   display: flex;
   color: white;
-  height: 70em;
+  height: 120em;
 }
 
 .carousel_items[id="1"] {

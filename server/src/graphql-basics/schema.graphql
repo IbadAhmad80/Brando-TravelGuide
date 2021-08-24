@@ -1,5 +1,16 @@
 type Query {
   packages: [Packages!]!
+  blogs(data: BlogsInput): [Blogs!]!
+  getComments(blogID: ID!): CommentsQuery
+}
+
+type Mutation {
+  updateBlogViews(id: ID!): Blogs!
+  createComment(data: CreateCommentInput!): Comments!
+}
+
+type Subscription {
+  comment(postId: ID!): Comments!
 }
 
 type Packages {
@@ -9,4 +20,46 @@ type Packages {
   detail: String!
   category: [String!]!
   image: String!
+}
+
+type Blogs {
+  id: ID!
+  title: String!
+  category: String!
+  views: Int!
+  tags: [String!]!
+  image: String!
+  date: String!
+  comments: [Comments!]!
+}
+
+type Comments {
+  id: ID!
+  text: String!
+  email: String!
+  name: String!
+  postID: ID!
+  blog: Blogs!
+}
+
+type CommentsQuery {
+  comments: [Comments!]!
+  blogID: ID!
+}
+
+input BlogsInput {
+  title: String
+  tag: String
+  date: Boolean
+  views: Boolean
+  category: String
+  default: Boolean
+  month: String
+}
+
+input CreateCommentInput {
+  text: String!
+  email: String!
+  postID: ID!
+  name: String!
 }

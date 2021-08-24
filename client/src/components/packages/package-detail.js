@@ -41,35 +41,35 @@ function PackageInformation({ detail }) {
       <div className={styles.separator}>{}</div>
       <li>
         <ol>
-          <h4>Day 1</h4>
+          <h4>Day&nbsp;1</h4>
           <h6>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum is simply dummy text.
           </h6>
         </ol>
         <ol>
-          <h4>Day 2</h4>
+          <h4>Day&nbsp;2</h4>
           <h6>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum is simply dummy text.
           </h6>
         </ol>
         <ol>
-          <h4>Day 3</h4>
+          <h4>Day&nbsp;3</h4>
           <h6>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum is simply dummy text.
           </h6>
         </ol>
         <ol>
-          <h4>Day 4</h4>
+          <h4>Day&nbsp;4</h4>
           <h6>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum is simply dummy text.
           </h6>
         </ol>
         <ol>
-          <h4>Day 5</h4>
+          <h4>Day&nbsp;5</h4>
           <h6>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum is simply dummy text.

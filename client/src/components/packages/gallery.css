@@ -4,7 +4,7 @@
 }
 
 .wrapper {
-  margin: 50px auto 80px auto !important;
+  margin: 30px auto 80px auto !important;
   max-width: 100%;
 }
 
@@ -42,7 +42,7 @@
   display: grid;
   justify-content: center;
   width: 100%;
-  margin: 3em auto;
+  margin: 8em auto;
   grid-gap: 3rem 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 320px));
 }
@@ -56,6 +56,9 @@
   overflow: hidden;
 }
 
+/* .gallery > div:hover:nth-child(odd){
+  
+} */
 .gallery .image span {
   display: flex;
   overflow: hidden;
@@ -66,7 +69,7 @@
   position: absolute;
   bottom: 0;
   color: white;
-  background-color: rgba(5, 6, 7, 0.85);
+  background-color: rgba(5, 6, 7, 0.88);
   width: 320px;
   transform: translateY(42px);
   transition: 0.2s linear transform;
@@ -100,6 +103,7 @@
   font-weight: 500 !important;
   padding: 10px 0;
   width: 100%;
+  outline: none;
   margin: 10px 0 0 0;
   text-transform: uppercase;
   color: #fff;
@@ -120,25 +124,13 @@
 @keyframes animate {
   0% {
     transform: scale(0.5);
+    /* transform: skew(-0.04turn, 18deg); */
   }
+
   100% {
     transform: scale(1);
+    transform: skew(0);
   }
-}
-
-.shadow {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-  display: none;
-  background: rgba(252, 252, 252, 0.4);
-}
-
-.shadow.show {
-  display: block;
 }
 
 @media (max-width: 700px) {

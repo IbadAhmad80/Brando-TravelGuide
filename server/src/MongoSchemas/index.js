@@ -1,3 +1,4 @@
 import Packages from "./packages";
-
-export { Packages };
+import Blogs from "./blogs";
+import Comments from "./comments";
+export { Packages, Blogs, Comments };

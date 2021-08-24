@@ -1,43 +1,46 @@
-import { Packages } from "../../MongoSchemas";
+import { Blogs, Comments, Packages } from "../../MongoSchemas";
 
 const Query = {
-  async packages(parent, args, context, info) {
+  packages() {
     return Packages.find();
   },
+  async getComments(_, { blogID }) {
+    const comments = await Comments.find({ postID: blogID });
+    return { blogID, comments };
+  },
+
+  async blogs(_, { data }) {
+    if (data.default) {
+      return Blogs.find({});
+    } else if (data.title) {
+      //getting blog by title
+      return Blogs.find({ title: data.title.toLowerCase() });
+    } else if (data.category) {
+      //getting blogs by category
+      if (data.category === "Uncategorized") return Blogs.find({});
+      else return Blogs.find({ category: data.category.toLowerCase() });
+    } else if (data.tag) {
+      //getting blogs by tag
+      return Blogs.find({ tags: data.tag.toLowerCase() });
+    } else if (data.views) {
+      //getting blogs accroding to heigher views
+      return Blogs.find().sort({ views: -1 }).limit(5);
+    } else if (data.date) {
+      //getting blogs accroding to their dates
+      return Blogs.find().sort({ date: -1 }).limit(5);
+    } else if (data.month) {
+      //getting blogs accroding to their dates
+
+      let blogs = await Blogs.find().sort({});
+      return blogs.filter(({ date }) => {
+        return (
+          new Date(date)
+            .toLocaleString("en-US", { month: "long" })
+            .toLowerCase() === data.month.toLowerCase()
+        );
+      });
+    }
+  },
 };
-//   async posts(parent, args, context, info) {
-//     if (!args.query) {
-//       return Posts.find().populate("author").populate("comments");
-//     } else {
-//       const posts = await Posts.find({
-//         title: args.query.toLowerCase(),
-//       })
-//         .populate("author")
-//         .populate("comments");
-
-//       if (posts && posts.length > 0) return posts;
-//       else throw new Error("posts not found");
-//     }
-//   },
-
-//   comments(parent, args, { db }, info) {
-//     return Comments.find().populate("author").populate("post");
-//   },
-//   me() {
-//     return {
-//       id: "123098",
-//       name: "Mike",
-//       email: "mike@example.com",
-//     };
-//   },
-//   post() {
-//     return {
-//       id: "092",
-//       title: "GraphQL 101",
-//       body: "",
-//       published: false,
-//     };
-//   },
-// };
 
 export { Query as default };

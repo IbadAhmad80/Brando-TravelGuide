@@ -25,6 +25,18 @@ body {
   height: 100vh;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgb(102, 102, 102);
+}
+::-webkit-scrollbar-thumb:vertical {
+  background: linear-gradient(#e9bfb2, #d66e4e, #dfae9f);
+}
+
 .normal_header {
   position: sticky;
   width: 100%;
@@ -34,6 +46,7 @@ body {
   display: flex;
   align-items: center;
   z-index: 1000;
+  transition: 0.15s padding linear;
 }
 
 .sticky_header {
@@ -131,7 +144,7 @@ header .holiday_nav a {
   header .navbar {
     position: absolute;
     top: 99%;
-    left: 30px;
+    left: 35px;
     width: 100%;
     padding: 1rem 2rem;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);

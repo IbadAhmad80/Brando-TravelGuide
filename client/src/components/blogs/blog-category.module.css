@@ -1,0 +1,242 @@
+.container {
+  background-color: white !important;
+  height: 100%;
+}
+
+.container .hero_wrapper {
+  background-color: rgba(52, 56, 61, 1) !important;
+}
+
+.container .hero_wrapper .hero_container {
+  width: 100%;
+  height: 450px;
+  margin-top: -10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .hero_wrapper .hero_container .hero_title,
+.hero_description {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: white;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container .hero_wrapper .hero_container .hero_description {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 1rem;
+  margin: 0;
+}
+
+.container .navigation_panel {
+  padding: 1em 3em;
+  color: gray;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.02cm;
+  border-bottom: 0.01em solid rgb(229, 229, 229);
+}
+
+.container .details_wrapper {
+  display: flex;
+  margin: 10em 10rem;
+  padding: 0 3em;
+  column-gap: 15em;
+}
+
+.container .details_wrapper .left_wrapper {
+  flex: 70%;
+}
+
+.container .details_wrapper .left_wrapper > div {
+  display: flex;
+  column-gap: 5em;
+}
+
+.container .details_wrapper .left_wrapper div .date_wrapper {
+  flex: 10%;
+}
+
+.container .details_wrapper .left_wrapper div .description_wrapper {
+  flex: 90%;
+}
+
+.container .details_wrapper .left_wrapper h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgb(52, 56, 61);
+}
+
+.container .details_wrapper .left_wrapper h5 {
+  margin-top: 20px;
+  font-size: 25px;
+  width: 4.5em;
+  text-transform: uppercase;
+  color: rgb(52, 56, 61);
+  padding: 1em 0.7em;
+  background-color: rgb(52, 56, 61);
+  color: white;
+  text-align: center;
+}
+
+.container .details_wrapper .left_wrapper h5 span {
+  font-size: 11px;
+  letter-spacing: 0.02cm;
+}
+
+.container .details_wrapper .left_wrapper img {
+  display: inline;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.container .details_wrapper .left_wrapper h6 {
+  margin: 0 0 20px 0;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: rgb(113, 117, 119) !important;
+
+  line-height: 18px;
+}
+
+.container .details_wrapper .left_wrapper h3 {
+  margin: 10px 0;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgb(21, 21, 22);
+}
+
+.container .details_wrapper .left_wrapper button {
+  margin: 10px 0 100px 0;
+  padding: 1em 1.5em;
+  letter-spacing: 0.01cm;
+  color: white;
+  font-size: 8px;
+  background-color: black;
+  transition: 0.3s all linear;
+  text-transform: uppercase;
+}
+
+.container .details_wrapper .left_wrapper button:hover {
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.container .details_wrapper .right_wrapper {
+  flex: 30%;
+}
+
+.container .details_wrapper .right_wrapper .search_wrapper {
+  display: flex;
+  background: transparent;
+  margin-bottom: 9em;
+  border-bottom: 1px solid rgb(228, 225, 225);
+  width: 90%;
+  padding: 1em 0;
+  transition: 0.3s border ease-in;
+}
+
+.container .details_wrapper .right_wrapper .search_wrapper input {
+  outline: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.container .details_wrapper .right_wrapper span {
+  font-size: 20px;
+  color: gray;
+  align-self: center;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+
+.container .details_wrapper .right_wrapper h5 {
+  color: black;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.container .details_wrapper .right_wrapper .border {
+  height: 4px;
+  margin: 20px 0;
+  background-color: rgb(214, 110, 74);
+  width: 5em;
+}
+
+.container .details_wrapper .right_wrapper .title,
+.container .details_wrapper .right_wrapper .category,
+.container .details_wrapper .right_wrapper .month {
+  text-transform: uppercase;
+  color: black;
+  font-size: 12px;
+  transition: 0.3s color;
+  margin: 18px 0;
+  font-weight: 500;
+}
+
+.container .details_wrapper .right_wrapper .date {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: rgb(87, 78, 78);
+  transition: 0.3s color;
+  margin: -10px 0 18px 0;
+  font-weight: 500;
+}
+
+.container .details_wrapper .right_wrapper .title:hover,
+.container .details_wrapper .right_wrapper .category:hover,
+.container .details_wrapper .right_wrapper .month:hover {
+  color: maroon;
+  cursor: pointer;
+}
+
+.container .details_wrapper .right_wrapper .title_border,
+.container .details_wrapper .right_wrapper .category_border {
+  height: 1px;
+  margin: 20px 0;
+  background-color: rgb(228, 225, 225);
+  width: 90%;
+}
+
+@media (max-width: 1000px) {
+  .container .details_wrapper {
+    flex-direction: column;
+    padding: 0;
+    margin: 10em 0;
+  }
+
+  .container .details_wrapper .left_wrapper,
+  .container .details_wrapper .right_wrapper {
+    padding: 0 2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero_title {
+    font-size: 30px !important;
+  }
+
+  .hero_description {
+    font-size: 23px !important;
+  }
+
+  .container .details_wrapper .left_wrapper h5 {
+    width: 3em;
+    padding: 0.5em;
+    font-size: 20px;
+  }
+  .container .details_wrapper .left_wrapper h5 span {
+    font-size: 8px;
+  }
+}

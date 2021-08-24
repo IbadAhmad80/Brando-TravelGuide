@@ -1,15 +1,24 @@
-.form_container {
+.form_container,
+.blog_form_container {
   display: flex;
   width: 80%;
   margin: 4em auto;
   text-align: center;
 }
 
+.blog_form_container {
+  flex-direction: column;
+  background-color: white;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
 .form_container .text_fields {
   flex: 50%;
 }
 
-.form_container .text_fields .input_field {
+.form_container .text_fields .input_field,
+.blog_input_field {
   caret-color: white;
   outline: none;
   display: block;
@@ -21,6 +30,14 @@
   margin: 15px auto;
 }
 
+.blog_form_container .text_fields .blog_input_field {
+  height: 5em;
+  caret-color: black;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(228, 225, 225);
+  width: 100%;
+}
+
 .form_container .text_fields .input_field:nth-of-type(1) {
   margin-top: 10px;
 }
@@ -29,23 +46,41 @@
   flex: 50%;
 }
 
-.form_container .text_area .message {
+.form_container .text_area .message,
+.blog_form_container .blog_text_area .message {
   caret-color: white;
   height: 85%;
   padding: 12px 25px;
-  border: 2px solid rgba(255, 255, 255, 0.1) !important;
+  border: 2px solid rgba(255, 255, 255, 0.1);
   font-size: 12px !important;
   background: rgba(255, 255, 255, 0.1);
   margin: 8px auto;
   width: 80% !important;
+  resize: none;
+}
+
+.blog_form_container .blog_text_area .message {
+  background-color: white !important;
+  border: 2px solid rgb(228, 225, 225);
+  caret-color: black;
+  width: 100% !important;
+
+  margin: 0;
+  padding: 3em 25px;
 }
 
 .button_container {
   width: 86%;
-  margin-top: -20px;
+  margin-top: 20px;
 }
 
-.button_container .message_btn {
+.blog_button_container {
+  width: 100%;
+  margin: 40px 0;
+}
+
+.button_container .message_btn,
+.blog_button_container .message_btn {
   border: 4px solid rgba(255, 255, 255, 0.4);
   background-color: transparent;
   font-size: 14px;
@@ -54,11 +89,25 @@
   float: right;
 }
 
+.blog_button_container .message_btn {
+  color: white;
+  background-color: black;
+  border: none;
+}
+
 .button_container .message_btn:hover {
   transition: 0.3s;
   background-color: rgb(75, 73, 81);
   color: white;
   cursor: pointer;
+}
+
+.blog_button_container .message_btn:hover {
+  transition: 0.3s;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  border: 1px solid black;
 }
 
 .bottom_devider {

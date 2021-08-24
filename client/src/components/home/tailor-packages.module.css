@@ -115,7 +115,7 @@
 @media (max-width: 1000px) {
   .packages_container .package_grid {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(4, 40em);
+    grid-template-rows: repeat(4, 70em);
   }
 
   .title,
@@ -141,16 +141,16 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .packages_container .package_grid {
-    grid-template-rows: repeat(4, 35em);
+    grid-template-rows: repeat(4, 45em);
   }
 }
 
 @media (max-width: 550px) {
   .packages_container .package_grid {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(4, 24em);
+    grid-template-rows: repeat(4, 40em);
   }
   .description {
     margin: 0px;

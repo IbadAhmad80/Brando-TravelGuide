@@ -2,21 +2,28 @@ import { useQuery } from "@apollo/client";
 import React from "react";
 import { getPackages } from "../query";
 import { useHistory } from "react-router-dom";
+
+// import Shuffle from "react-shuffle";
 import "./gallery.css";
 
 export default function Gallery() {
   const { loading, data } = useQuery(getPackages);
-  const [selectedCategory, setSelectedCatgeory] = React.useState("holidays");
+  const [selectedCategory, setSelectedCatgeory] = React.useState("honeymoon");
   const [activePackages, setActivePackages] = React.useState(null);
 
   React.useEffect(() => {
     if (!loading) {
+      //getting the active category
       document.querySelector(".active").classList.remove("active");
+      //removing the active category
       document.querySelector(`.${selectedCategory}`).classList.add("active");
+      // if cateogry is all then return packages from all categories
       if (selectedCategory === "all") return setActivePackages(data.packages);
+      // if its other than all only return packages from that category
       const filteredpackages = data.packages.filter(({ category }) => {
         return category.includes(selectedCategory);
       });
+      // setting packages accroding to the active category
       setActivePackages(filteredpackages);
     }
   }, [selectedCategory, loading, data]);
@@ -29,7 +36,7 @@ export default function Gallery() {
         <nav>
           <div className="items">
             <span
-              className="item all"
+              className="item all "
               onClick={() => setSelectedCatgeory("all")}
             >
               All
@@ -54,7 +61,7 @@ export default function Gallery() {
               safari
             </span>
             <span
-              className="item active honeymoon"
+              className="item  honeymoon active"
               onClick={() => setSelectedCatgeory("honeymoon")}
             >
               honeymoon
@@ -99,7 +106,7 @@ function SinglePackage({ image, title, description, detail }) {
           className="package-explore-now-btn"
           onClick={() =>
             history.push({
-              pathname: `./packages/${title}`,
+              pathname: `./packages/${title.replaceAll(" ", "-")}`,
               title: title,
               detail: detail,
               description: description,

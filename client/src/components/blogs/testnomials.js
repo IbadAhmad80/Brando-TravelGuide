@@ -53,7 +53,7 @@ function SwiperSlideShow() {
       >
         {testnomialIDs.map((id) => {
           return (
-            <SwiperSlide className={styles.swiper_slide}>
+            <SwiperSlide className={styles.swiper_slide} key={id}>
               <SingleTestnomial id={id} key={id + Math.random()} />
             </SwiperSlide>
           );

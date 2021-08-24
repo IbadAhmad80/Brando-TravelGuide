@@ -3,22 +3,39 @@
   margin: 7em auto 0 auto;
 }
 .carousel_container .blog {
-  cursor: url(https://brandowp.b-cdn.net/wp-content/themes/brando/assets/images/icon-move-light.png),
-    move;
-  margin: 0 0.5em;
+  margin: 0 1em;
+}
+
+.carousel_container .blog span {
+  overflow: hidden !important;
+  width: 100%;
+  display: flex;
+  position: relative;
+
+  top: 0;
 }
 
 .carousel_container .blog img {
   width: 100% !important;
-  height: 230px;
+  height: auto;
+  overflow: hidden;
+  cursor: url(https://brandowp.b-cdn.net/wp-content/themes/brando/assets/images/icon-move-light.png),
+    move;
 }
 
+.carousel_container .blog img:hover {
+  transition: 0.5s;
+  opacity: 0.6;
+  transform: scale(1.1);
+}
 .carousel_container .blog .published_date {
-  line-height: 20px;
   font-size: 11px;
+  position: absolute;
   background: #1e2126;
-  color: white;
-  display: none;
+  padding: 1.5em 2.5em;
+  color: #ababab;
+  bottom: 0;
+  right: 0;
 }
 
 .carousel_container .blog .id {
@@ -28,9 +45,9 @@
 }
 
 .carousel_container .blog .title {
-  display: inline-block;
-  padding: 0.3em 2em 0 0.5em;
-  width: 85%;
+  display: inline;
+  padding: 1em 2em 0 0.5em;
+  width: auto;
   color: #ababab;
   font-size: 14px;
   line-height: 20px;
@@ -41,31 +58,34 @@
 .carousel_container .blog .title:hover {
   transition: 0.3s all;
   cursor: pointer !important;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .carousel_container .blog .author {
   color: #ababab;
   font-size: 12px;
-  padding: 0.5em 0 0 4em;
+  padding: 0.5em 0 0 0em;
   text-transform: uppercase;
   font-weight: 300;
 }
 
-@media (max-width: 1020px) and (min-width: 950px) {
+/* @media (max-width: 1020px) and (min-width: 950px) {
   .carousel_container .blog img {
-    height: 350px !important;
+    height: 320px !important;
+    width: 45rem !important;
   }
 }
 
 @media (max-width: 950px) and (min-width: 880px) {
   .carousel_container .blog img {
     height: 280px !important;
+    width: 40rem !important;
   }
 }
 
-@media (max-width: 685px) and (min-width: 460px) {
+@media (max-width: 685px) and (min-width: 515px) {
   .carousel_container .blog img {
     height: 330px !important;
+    width: 50rem !important;
   }
-}
+} */

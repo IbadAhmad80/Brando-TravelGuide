@@ -78,7 +78,7 @@ const Details = () => {
     setenabledId(id);
   };
   return (
-    <ui className={classes.detalsList}>
+    <ul className={classes.detalsList}>
       {details.map((detail) => (
         <DetailItem
           key={detail.id}
@@ -87,7 +87,7 @@ const Details = () => {
           enableDetail={enableDetail}
         />
       ))}
-    </ui>
+    </ul>
   );
 };
 

@@ -32,7 +32,7 @@ export default function Services() {
   return (
     <div>
       <div className={styles.services_container}>
-        <h2 className={styles.main_heading}>OUR AMAZING SERVICES</h2>
+        <h2 className={styles.main_heading}>AMAZING SERVICES</h2>
         <h4 className={styles.sub_heading}>THIS IS AMAZING TRAVEL AGENCY!</h4>
         <div className={styles.service}>
           {services.map(({ title, id, description }) => {

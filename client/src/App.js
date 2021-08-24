@@ -1,3 +1,4 @@
+import React from "react";
 import HomeSection from "./components/home";
 import NavBar from "./components/navbar";
 import mountain from "./assets/mountain.jpg";
@@ -9,46 +10,55 @@ import Blogs from "./components/blogs";
 import About from "./components/about";
 import { Route, Switch } from "react-router-dom";
 import PackageDetail from "./components/packages/package-detail";
+import BlogDetails from "./components/blogs/blog-details";
+import BlogCategory from "./components/blogs/blog-category";
 
 function App() {
   return (
     <Switch>
-      <Route path="/" component={Routes} exact />
+      <Route path="/" component={HomeRoutes} exact />
       <Route path="/packages/:title" component={PackageDetail} exact />
+      <Route path="/blogs/:title" component={BlogDetails} exact />
+      <Route path="/blogs/:type/:title" component={BlogCategory} exact />
     </Switch>
   );
 }
 
 export default App;
 
-function Routes() {
+function HomeRoutes() {
+  //scroll to top of page during navigation
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <div className="App">
         <div style={backgroundImage}>
-          <span id="home">
+          <div id="home">
             <NavBar />
-          </span>
+          </div>
           <HomeSection />
         </div>
-        <span id="about">
+        <div id="about">
           <About />
-        </span>
-        <span id="packages">
+        </div>
+        <div id="packages">
           <Packages />
-        </span>
-        <span id="services">
+        </div>
+        <div id="services">
           <Services />
-        </span>
-        <span id="offers">
+        </div>
+        <div id="offers">
           <Offers />
-        </span>
-        <span id="blogs">
+        </div>
+        <div id="blogs">
           <Blogs />
-        </span>
-        <span id="contact">
+        </div>
+        <div id="contact">
           <Contact />
-        </span>
+        </div>
       </div>
     </div>
   );

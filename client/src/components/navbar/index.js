@@ -21,7 +21,7 @@ export default function NavBar() {
 
   return (
     <header className={scrolled ? styles.sticky_header : styles.normal_header}>
-      <a href="#home" className={styles.logo}>
+      <a href="/#home" className={styles.logo}>
         <img src={logo} alt="logo" height="30" />
       </a>
 
@@ -32,16 +32,18 @@ export default function NavBar() {
 
       <nav className={styles.navbar}>
         <h2> | </h2>
-        <a href="#about">ABOUT</a>
-        <a href="#packages">PACKAGES</a>
-        <a href="#services">SERVICES</a>
-        <a href="#offers">OFFERS</a>
-        <a href="#blogs">BLOGS</a>
-        <a href="#contact">CONTACT</a>
+
+        <a href="/#about">ABOUT</a>
+
+        <a href="/#packages">PACKAGES</a>
+        <a href="/#services">SERVICES</a>
+        <a href="/#offers">OFFERS</a>
+        <a href="/#blogs">BLOGS</a>
+        <a href="/#contact">CONTACT</a>
       </nav>
       <span className={styles.holiday_nav}>
         <p>ENJOY HOLIDAYS ?</p>
-        <a href="#contact">Book Now!</a>
+        <a href="/#contact">Book Now!</a>
       </span>
     </header>
   );

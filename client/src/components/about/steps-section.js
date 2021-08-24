@@ -11,10 +11,8 @@ const StepItem = ({ step }) => {
   return (
     <li>
       <div className={classes.row}>
-        <h1 className={(classes.column, classes.numberColor)}>0{step.id}.</h1>
-        <h4 className={(classes.column, classes.textColor)}>
-          {step.slug.toUpperCase()}
-        </h4>
+        <h1 className={classes.numberColor}>0{step.id}.</h1>
+        <h4 className={classes.textColor}>{step.slug.toUpperCase()}</h4>
       </div>
       {step.id !== 4 ? <hr className={classes.hr} /> : null}
     </li>

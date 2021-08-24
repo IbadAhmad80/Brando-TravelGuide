@@ -69,22 +69,20 @@
 }
 
 .information_container li ol h4 {
-  display: block;
   color: white;
   padding: 0.5em 1em;
   text-transform: uppercase;
   background-color: black;
   font-size: 12px;
-  align-self: flex-start;
-  margin: 0;
+  max-height: 30px;
 }
 
 .information_container li ol h6 {
   color: rgb(116, 116, 116);
   font-size: 13px;
   padding: 0 1em;
+
   margin: 0;
-  align-self: center;
 }
 
 .information_container li ol:nth-last-child(1) {

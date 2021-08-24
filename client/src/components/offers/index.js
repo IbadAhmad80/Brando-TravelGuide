@@ -43,18 +43,21 @@ export default function Offers() {
 function SingleOffer({ id, title, discount }) {
   return (
     <div>
-      <img
-        src={
-          id === "1"
-            ? offer1
-            : id === "2"
-            ? offer2
-            : id === "3"
-            ? offer3
-            : offer4
-        }
-        alt={`offers ${id} img`}
-      />
+      <span>
+        <img
+          src={
+            id === "1"
+              ? offer1
+              : id === "2"
+              ? offer2
+              : id === "3"
+              ? offer3
+              : offer4
+          }
+          alt={`offers ${id} img`}
+        />
+      </span>
+
       <div className={styles.offer_content}>
         <h6 className={styles.discount}>{discount} off</h6>
         <h2 className={styles.title}>{title}</h2>
