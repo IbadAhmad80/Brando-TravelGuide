@@ -17,7 +17,7 @@ export const Slidersettings = {
   arrows: false,
   autoplay: true,
   speed: 3000,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 2500,
   slidesToShow: 4,
   slidesToScroll: 4,
   initialSlide: 0,
@@ -35,7 +35,8 @@ export const Slidersettings = {
       breakpoint: 900,
       settings: {
         dots: false,
-        autoplaySpeed: 1500,
+        speed: 2000,
+
         slidesToShow: 2,
         slidesToScroll: 2,
         initialSlide: 2,
@@ -44,8 +45,9 @@ export const Slidersettings = {
     {
       breakpoint: 650,
       settings: {
-        autoplaySpeed: 1000,
+        autoplaySpeed: 3000,
         dots: false,
+        speed: 1500,
         slidesToShow: 1,
         slidesToScroll: 1,
       },

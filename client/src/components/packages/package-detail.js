@@ -8,6 +8,12 @@ export default function PackageDetail({
   location: { title, detail, description },
 }) {
   const history = useHistory();
+
+  //scroll to top of page during navigation
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={styles.detail_container}>
       <div className={styles.carousel}>

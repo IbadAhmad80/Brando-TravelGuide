@@ -222,6 +222,7 @@ body {
 
 .left_wrapper .comment_img {
   height: 40px !important;
+  min-width: 40px !important;
   width: 40px !important;
   border-radius: 50% !important;
   text-align: center;
@@ -349,5 +350,9 @@ body {
 
   .hero_description {
     font-size: 23px !important;
+  }
+
+  .comment_img {
+    display: initial;
   }
 }

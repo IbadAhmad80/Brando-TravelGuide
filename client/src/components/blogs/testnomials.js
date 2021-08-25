@@ -6,7 +6,6 @@ import SwiperCore, { EffectCoverflow, Pagination } from "swiper/core";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-// import "./swiper.css";
 
 // Import Swiper styles
 import "swiper/swiper.min.css";
@@ -38,15 +37,16 @@ function SwiperSlideShow() {
         centeredSlides={true}
         slidesPerView={"auto"}
         coverflowEffect={{
-          rotate: 0,
+          rotate: 30,
           stretch: 0,
           depth: 100,
-          modifier: 2,
+          modifier: 1,
           slideShadows: true,
         }}
+        spaceBetween={20}
         loop={true}
         autoplay={{
-          delay: 500,
+          delay: 2500,
           disableOnInteraction: false,
         }}
         className={styles.mySwiper}
@@ -70,12 +70,14 @@ function SingleTestnomial({ id }) {
         <FaQuoteRight />
       </h1>
       <h6 className={styles.description}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-        mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-        voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-        fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-        accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
-        molestias architecto voluptate aliquam nihil
+        Dummy text refers to the bits of content that are used to fill a website
+        mock-up. This text helps web designers better envision how the website
+        will look as a finished product. It is important to understand that
+        dummy text has no meaning whatsoever. Its sole purpose is to fill out
+        blank spaces with “word-like” content, without making any copyright
+        infringements. Dummy text is also known as filler text or placeholder
+        text, and it has been used for a long time in the various fields of
+        online publishing.
       </h6>
       <div className={styles.user_section}>
         <img
@@ -83,7 +85,7 @@ function SingleTestnomial({ id }) {
           alt={`testnomial pic ${id}`}
         />
         <span>
-          <h6 className={styles.user}>Afreen Mushtaq</h6>
+          <h6 className={styles.user}>Random Person</h6>
           <h6 className={styles.post}>Nature Enthusiast</h6>
         </span>
       </div>

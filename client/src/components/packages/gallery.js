@@ -20,16 +20,26 @@ export default function Gallery() {
       // if cateogry is all then return packages from all categories
       if (selectedCategory === "all") return setActivePackages(data.packages);
       // if its other than all only return packages from that category
-      const filteredpackages = data.packages.filter(({ category }) => {
-        return category.includes(selectedCategory);
-      });
+      const filteredpackages =
+        data &&
+        data.packages.filter(({ category }) => {
+          return category.includes(selectedCategory);
+        });
       // setting packages accroding to the active category
       setActivePackages(filteredpackages);
     }
   }, [selectedCategory, loading, data]);
 
   return loading ? (
-    <div>Loading</div>
+    <div
+      style={{
+        textAlign: "center",
+        fontSize: "25px",
+        margin: "4em auto",
+      }}
+    >
+      Loading
+    </div>
   ) : (
     <div>
       <div className="wrapper">
